@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <header class="py-4 px-4 sm:px-8 lg:px-16 flex justify-between items-center sticky top-0 z-50 bg-gray-900 shadow-sm">
+        <div class="flex items-center space-x-2">
+            <span class="text-3xl font-bold text-amber-500">Automotive Hub</span>
+        </div>
+        <a href="#order-form-section" class="gradient-gold text-gray-900 font-semibold py-2 px-6 rounded-full transform hover:scale-105 transition-transform duration-300">
+            Order Now
+        </a>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-8 lg:px-16 py-12">
+        <section id="hero-car-display" class="relative w-full h-[60vh] rounded-2xl overflow-hidden shadow-2xl hidden mb-12">
+            <img id="hero-car-image" src="" alt="Selected vehicle image" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            
+            <div class="relative z-10 flex flex-col items-start h-full p-8 sm:p-12 lg:p-16 justify-end">
+                <div class="mb-4">
+                    <span id="hero-car-price" class="text-4xl sm:text-5xl font-extrabold text-amber-500"></span>
+                </div>
+                
+                <div class="flex items-end justify-between w-full">
+                    <div class="flex items-center space-x-8 text-white">
+                        <div class="flex flex-col items-center">
+                            <span id="hero-car-acceleration" class="text-3xl sm:text-4xl font-bold"></span>
+                            <span class="text-sm text-gray-400">0-100 km/h</span>
+                        </div>
+                        <div class="w-16 h-1 bg-gray-600 rounded-full"></div>
+                        <div class="flex flex-col items-center">
+                            <span id="hero-car-speed" class="text-3xl sm:text-4xl font-bold"></span>
+                            <span class="text-sm text-gray-400">Top Speed</span>
+                        </div>
+                        <div class="w-16 h-1 bg-gray-600 rounded-full"></div>
+                        <div class="flex flex-col items-center">
+                            <span id="hero-car-range" class="text-3xl sm:text-4xl font-bold"></span>
+                            <span class="text-sm text-gray-400">Max Range</span>
+                        </div>
+                    </div>
+                    <div class="ml-auto text-right">
+                        <h1 id="hero-car-name" class="text-4xl sm:text-6xl lg:text-8xl font-black tracking-tighter text-white drop-shadow-lg"></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="static-hero-section" class="text-center py-16 sm:py-24 animate-fadeInScale bg-gray-900 rounded-2xl">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-4 leading-tight">Find Your Perfect Car</h1>
+            <p class="text-lg sm:text-xl text-gray-400 mb-8 max-w-2xl mx-auto">Explore a vast collection of verified, quality-checked vehicles with a simple search.</p>
+            <div class="max-w-3xl mx-auto flex items-center bg-gray-800 rounded-full p-2 search-bar-shadow">
+                <input type="text" id="search-input" placeholder="Search for make, model, or city" class="flex-grow p-3 rounded-full outline-none text-white bg-gray-700 focus:ring-amber-500 focus:border-amber-500 border border-gray-600">
+                <button onclick="searchCars()" class="gradient-gold text-gray-900 font-semibold py-3 px-6 rounded-full hover:opacity-80 transition-opacity duration-200 ml-2">Search</button>
+            </div>
+        </section>
+
+        <section id="main-categories" class="py-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-10 text-white">Browse By Category</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg vehicle-card cursor-pointer" onclick="showCarsByCategory('sedan')">
+                    <img class="w-full h-48 object-cover object-center" src="https://placehold.co/800x600/1e293b/d1d5db?text=Sedan" alt="Sedan Placeholder">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-semibold text-white">Sedan</h3>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg vehicle-card cursor-pointer" onclick="showCarsByCategory('suv')">
+                    <img class="w-full h-48 object-cover object-center" src="https://placehold.co/800x600/1e293b/d1d5db?text=SUV" alt="SUV Placeholder">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-semibold text-white">SUV</h3>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg vehicle-card cursor-pointer" onclick="showCarsByCategory('truck')">
+                    <img class="w-full h-48 object-cover object-center" src="https://placehold.co/800x600/1e293b/d1d5db?text=Truck" alt="Truck Placeholder">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-semibold text-white">Truck</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="car-list" class="py-12 hidden">
+            <button onclick="showMainCategories()" class="mb-6 py-2 px-6 rounded-full gradient-gold text-gray-900 font-semibold transform hover:scale-105 transition-transform duration-300">
+                Back to Categories
+            </button>
+            <h2 id="car-list-title" class="text-3xl sm:text-4xl font-bold text-center mb-10 text-white">Cars</h2>
+            <div id="car-list-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+        </section>
+
+        <section id="order-form-section" class="py-12">
+            <div class="max-w-xl mx-auto bg-gray-800 p-8 sm:p-12 rounded-2xl shadow-xl animate-fadeInScale">
+                <h2 class="text-3xl font-bold text-center mb-6 text-white">Book Your Vehicle</h2>
+                <p class="text-center text-gray-400 mb-8">Fill out the form below to place your order. Our team will contact you to finalize the details.</p>
+
+                <form id="order-form" class="space-y-6">
+                    <div>
+                        <label for="fullName" class="block text-sm font-medium text-gray-300">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required class="mt-1 block w-full rounded-md bg-gray-700 border-gray-600 text-white focus:ring-amber-500 focus:border-amber-500 shadow-sm transition-all duration-200">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300">Email Address</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full rounded-md bg-gray-700 border-gray-600 text-white focus:ring-amber-500 focus:border-amber-500 shadow-sm transition-all duration-200">
+                    </div>
+                    <div>
+                        <label for="phoneNumber" class="block text-sm font-medium text-gray-300">Phone Number</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" required class="mt-1 block w-full rounded-md bg-gray-700 border-gray-600 text-white focus:ring-amber-500 focus:border-amber-500 shadow-sm transition-all duration-200">
+                    </div>
+                    <div>
+                        <label for="selectedVehicle" class="block text-sm font-medium text-gray-300">Select Vehicle</label>
+                        <select id="selectedVehicle" name="selectedVehicle" required class="mt-1 block w-full rounded-md bg-gray-700 border-gray-600 text-white focus:ring-amber-500 focus:border-amber-500 shadow-sm transition-all duration-200">
+                        </select>
+                    </div>
+                    <div>
+                        <label for="additionalDetails" class="block text-sm font-medium text-gray-300">Additional Details</label>
+                        <textarea id="additionalDetails" name="additionalDetails" rows="4" class="mt-1 block w-full rounded-md bg-gray-700 border-gray-600 text-white focus:ring-amber-500 focus:border-amber-500 shadow-sm transition-all duration-200"></textarea>
+                    </div>
+
+                    <p id="status-message" class="text-center text-sm font-medium mt-4 h-5"></p>
+
+                    <button type="submit" id="submit-btn" class="w-full py-3 px-4 rounded-full gradient-gold text-gray-900 font-semibold transform hover:scale-105 transition-transform duration-300 shadow-lg">
+                        Submit Order
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-8 text-center text-gray-500 text-sm bg-gray-900">
+        <p>&copy; 2024 Automotive Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
