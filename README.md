@@ -42,25 +42,12 @@
 <h2 id="01-platform-overview" style="font-family: 'Bookman Old Style', 'URW Bookman', 'Georgia', serif; color: #f59e0b;">🌌 01. Platform Overview</h2>
 
 <p style="font-family: 'Bookman Old Style', 'URW Bookman', serif; font-size: 1.05rem; line-height: 1.7;">
-<b>Automotive Hub</b> is a responsive single-page web portal designed for instant vehicle discovery, performance telemetry inspection, and dealership booking — built with semantic HTML5, Vanilla JavaScript (ES6+), and Tailwind CSS with zero backend dependencies.
+<b>Automotive Hub</b> is a responsive single-page web portal for real-time vehicle discovery, performance telemetry, and instant booking — built with semantic HTML5, Vanilla JavaScript (ES6+), and Tailwind CSS with zero backend dependencies.
 </p>
 
-### ⚡ Key Capabilities
-
-- **🔍 Multi-Attribute Discovery:** Instantly search 65+ verified vehicles across Sedans, SUVs, and Trucks by make, model, category, or city.
-- **🏎️ Dynamic Telemetry HUD:** Interactive vehicle showcase featuring 0–100 km/h acceleration, top speed, driving range, and market pricing.
-- **📝 Instant Client Booking:** In-browser reservation workflow with input validation and automated manifest generation (<code>order_details.txt</code> download).
-- **📱 Fully Responsive & Secure:** Mobile-optimized layout with Content Security Policy (CSP), input sanitization, and anti-spam submission cooldown.
-
-```
-  ┌─────────────────────────┐      ┌─────────────────────────┐      ┌─────────────────────────┐
-  │  🔍 Search & Filter Hub │ ──❯  │ 🏎️ Dynamic Telemetry HUD│ ──❯  │ 📝 Client Booking Form  │
-  │  (Make, City, Category) │      │ (Speed / Range / 0-100) │      │  (Manifest .txt Export) │
-  └─────────────────────────┘      └─────────────────────────┘      └─────────────────────────┘
-```
-
-> [!NOTE]
-> **Zero-Dependency Architecture**: Automotive Hub operates entirely client-side without requiring databases, server environments, or third-party APIs.
+- **🔍 Search & Filter:** Explore 65+ vehicles across Sedans, SUVs, and Trucks by make, model, category, or city.
+- **🏎️ Telemetry HUD:** Inspect dynamic 0–100 km/h acceleration, top speed, driving range, and live pricing.
+- **📝 Direct Booking:** Client-side reservation pipeline with automated manifest export (<code>order_details.txt</code>).
 
 ---
 
