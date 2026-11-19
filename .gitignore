@@ -1,0 +1,28 @@
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.cer
+*.crt
+secrets.*
+credentials.*
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Logs & temp files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.system_generated/
+*.tmp
+*.bak
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini

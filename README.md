@@ -35,13 +35,29 @@
 
 <h2 id="01-platform-overview" style="font-family: 'Bookman Old Style', 'URW Bookman', 'Georgia', serif; color: #f59e0b;">🌌 01. Platform Overview</h2>
 
-<p style="font-family: 'Bookman Old Style', 'URW Bookman', serif; font-size: 1.05rem; line-height: 1.7;">
-<b>Automotive Hub</b> is an ultra-sleek, interactive vehicle discovery and dealership booking application. Designed with a dark obsidian aesthetic and lustrous gold accents, it pairs dynamic vehicle performance telemetry (0–100 km/h acceleration curves, top speed ceilings, and maximum range indices) with multi-category fleet filtering, responsive search indexing, and client-side booking manifest generation.
+<p style="font-family: 'Bookman Old Style', 'URW Bookman', serif; font-size: 1.03rem; line-height: 1.75;">
+<b>Automotive Hub</b> is an advanced, high-performance web platform engineered to transform the digital vehicle exploration, specification analysis, and dealership reservation experience. Developed with a responsive, modern architecture utilizing semantic HTML5, modular Vanilla JavaScript (ES6+), and Tailwind CSS, the application delivers a seamless, zero-latency interface tailored for car buyers, commercial fleet operators, and automobile enthusiasts alike.
+</p>
+
+<p style="font-family: 'Bookman Old Style', 'URW Bookman', serif; font-size: 1.03rem; line-height: 1.75;">
+At its aesthetic core, Automotive Hub features a dark obsidian and amber gold theme, enriched with subtle glassmorphism touches, card hover elevations, and fluid transitions. The platform addresses multifaceted automotive marketplace demands by presenting an extensive, categorized vehicle fleet comprising executive sedans (such as the Honda City, Volkswagen Virtus, and Skoda Slavia), high-utility SUVs (including the Mahindra XUV700, Hyundai Creta, and Toyota Fortuner), and heavy-duty commercial logistics haulers (ranging from Tata Signa trucks to Isuzu utility pickups).
+</p>
+
+<p style="font-family: 'Bookman Old Style', 'URW Bookman', serif; font-size: 1.03rem; line-height: 1.75;">
+The platform features an intelligent, real-time discovery engine capable of instant multi-attribute filtering. Users can dynamically query the entire database by automotive brand, vehicle model name, or geographical city location with instant UI grid updates. Selecting any vehicle smoothly transitions the interface into an immersive performance telemetry showcase. This hero view visualizes critical vehicle engineering metrics, including 0–100 km/h acceleration timestamps, maximum top-speed ceilings, total driving range indices, and live market valuation figures in Indian Lakhs.
+</p>
+
+<p style="font-family: 'Bookman Old Style', 'URW Bookman', serif; font-size: 1.03rem; line-height: 1.75;">
+Complementing its exploration suite is a streamlined, client-side reservation pipeline. Integrated directly into the single-page application workflow, the booking console allows prospective buyers to schedule vehicle purchases or test drives with zero backend dependencies. Upon submitting contact details and vehicle preferences, the system triggers an in-browser Blob manifest compiler that dynamically serializes transaction details, generates a structured <code>order_details.txt</code> receipt file, and initiates an immediate local download for the client.
+</p>
+
+<p style="font-family: 'Bookman Old Style', 'URW Bookman', serif; font-size: 1.03rem; line-height: 1.75;">
+By pairing rich telemetry visualization with intuitive search ergonomics and standalone order dispatch mechanics, Automotive Hub establishes a modern benchmark for lightweight automotive portals, offering complete responsive cross-device compatibility across desktop workstations, tablets, and mobile devices without requiring complex database infrastructure or recurring server hosting overheads. It represents a refined digital fusion of speed, elegance, and intuitive automotive consumer utility for everyone.
 </p>
 
 ```
   ┌─────────────────────────┐      ┌─────────────────────────┐      ┌─────────────────────────┐
-  │  🔍 Search & Filter Hub │ ──❯  │🏎️ Dynamic Telemetry HUD│ ──❯  │ 📝 Client Booking Form  │
+  │  🔍 Search & Filter Hub │ ──❯  │ 🏎️ Dynamic Telemetry HUD│ ──❯  │ 📝 Client Booking Form  │
   │  (Make, City, Category) │      │ (Speed / Range / 0-100) │      │  (Manifest .txt Export) │
   └─────────────────────────┘      └─────────────────────────┘      └─────────────────────────┘
 ```
@@ -57,7 +73,7 @@
 
 ### 🌟 Interactive Discovery & Dynamic Showcase
 <kbd>
-  <img src="Homepage.png" alt="Automotive Hub Homepage" width="94%" style="border-radius: 8px; border: 2px solid #f59e0b; box-shadow: 0 0 30px rgba(245, 158, 11, 0.25);" />
+  <img src="ss/Homepage.png" alt="Automotive Hub Homepage" width="94%" style="border-radius: 8px; border: 2px solid #f59e0b; box-shadow: 0 0 30px rgba(245, 158, 11, 0.25);" />
 </kbd>
 
 <br/>
@@ -67,7 +83,7 @@
 
 ### 🏎️ Vehicle Fleet Catalogue & Category Indexing
 <kbd>
-  <img src="catalogue.png" alt="Fleet Catalogue View" width="94%" style="border-radius: 8px; border: 2px solid #f59e0b; box-shadow: 0 0 30px rgba(245, 158, 11, 0.25);" />
+  <img src="ss/catalogue.png" alt="Fleet Catalogue View" width="94%" style="border-radius: 8px; border: 2px solid #f59e0b; box-shadow: 0 0 30px rgba(245, 158, 11, 0.25);" />
 </kbd>
 
 <br/>
@@ -77,7 +93,7 @@
 
 ### 🚛 Multi-Segment Verticals & Commercial Logistics
 <kbd>
-  <img src="verticals.png" alt="Automotive Categories and Verticals" width="94%" style="border-radius: 8px; border: 2px solid #f59e0b; box-shadow: 0 0 30px rgba(245, 158, 11, 0.25);" />
+  <img src="ss/verticals.png" alt="Automotive Categories and Verticals" width="94%" style="border-radius: 8px; border: 2px solid #f59e0b; box-shadow: 0 0 30px rgba(245, 158, 11, 0.25);" />
 </kbd>
 
 <br/>
@@ -87,7 +103,7 @@
 
 ### 📝 Client Reservation & Order Dispatch Console
 <kbd>
-  <img src="order.png" alt="Vehicle Booking Form" width="94%" style="border-radius: 8px; border: 2px solid #f59e0b; box-shadow: 0 0 30px rgba(245, 158, 11, 0.25);" />
+  <img src="ss/order.png" alt="Vehicle Booking Form" width="94%" style="border-radius: 8px; border: 2px solid #f59e0b; box-shadow: 0 0 30px rgba(245, 158, 11, 0.25);" />
 </kbd>
 
 <br/>
@@ -220,14 +236,16 @@ Additional Details: Requesting test drive availability for the AX7 Luxury Diesel
 
 ```text
 automotive hub/
-├── Homepage.png         # Screenshot: Hero search & telemetry display
-├── catalogue.png        # Screenshot: Vehicle grid catalogue
-├── verticals.png        # Screenshot: Category & vertical breakdown
-├── order.png            # Screenshot: Direct reservation modal
-├── index.html           # Core semantic HTML5 application structure
-├── style.css            # Custom CSS keyframes, scrollbar & animations
-├── script.js            # Dataset, search filter engine & manifest export
-└── README.md            # Comprehensive project documentation
+├── ss/                      # Single screenshots repository directory
+│   ├── Homepage.png         # Screenshot: Hero search & telemetry display
+│   ├── catalogue.png        # Screenshot: Vehicle grid catalogue
+│   ├── verticals.png        # Screenshot: Category & vertical breakdown
+│   └── order.png            # Screenshot: Direct reservation modal
+├── index.html               # Core semantic HTML5 application structure
+├── style.css                # Custom CSS keyframes, scrollbar & animations
+├── script.js                # Dataset, search filter engine & manifest export
+├── vercel.json              # Production headers configuration
+└── README.md                # Comprehensive project documentation
 ```
 
 ---
@@ -243,7 +261,7 @@ Distributed under the **[MIT License](LICENSE)**.
 ⭐ **Star this repository if you find Automotive Hub valuable for your automotive projects!** ⭐
 
 <p style="font-family: 'Bookman Old Style', 'URW Bookman', serif; color: #94a3b8; margin-top: 8px;">
-  Crafted with 🏎️ by <b>Priyanshu Pundir</b>
+  Crafted with 🏎️ by <b> Priyanshu Pundir</b>
 </p>
 
 </div>

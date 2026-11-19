@@ -2,9 +2,6 @@ body {
     font-family: 'Inter', sans-serif;
     @apply bg-gray-950 text-gray-200;
 }
-h1, h2, h3 {
-    font-family: 'Inter', sans-serif;
-}
 
 @keyframes fadeInScale {
     from {
@@ -33,16 +30,209 @@ h1, h2, h3 {
     background: #6b7280;
 }
 .vehicle-card {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease, border-color 0.35s ease;
     border-radius: 12px;
+    border: 1px solid rgba(75, 85, 99, 0.3);
+    position: relative;
 }
 .vehicle-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.7), 0 0 25px rgba(245, 158, 11, 0.25);
+    border-color: rgba(245, 158, 11, 0.6);
+}
+.car-image-container {
+    width: 100%;
+    height: 220px;
+    background: #111827;
+    overflow: hidden;
+    position: relative;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 0;
+}
+.car-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), filter 0.4s ease;
+}
+.vehicle-card:hover .car-image-container img {
+    transform: scale(1.04);
+    filter: brightness(1.05);
+}
+#hero-car-display {
+    position: relative;
+    width: 100%;
+    max-width: 1160px;
+    height: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #111827;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 1024px) {
+    #hero-car-display {
+        height: auto;
+        min-height: 500px;
+    }
+}
+@media (max-width: 768px) {
+    #hero-car-display {
+        height: auto;
+        min-height: 480px;
+        border-radius: 20px;
+    }
+    #hero-car-display > div.relative {
+        padding: 1.75rem 1.25rem !important;
+    }
+}
+@media (max-width: 480px) {
+    #hero-car-display {
+        height: auto;
+        min-height: 440px;
+        border-radius: 16px;
+    }
+    #hero-car-display > div.relative {
+        padding: 1.25rem 0.85rem !important;
+    }
+    .hero-interactive-price {
+        font-size: 1.75rem !important;
+    }
+    .hero-stat-box {
+        padding: 0.25rem 0.5rem !important;
+    }
+    .hero-stat-num {
+        font-size: 1.35rem !important;
+    }
+}
+@media (hover: none) and (pointer: coarse) {
+    .category-tilt-card {
+        transform: none !important;
+        perspective: none !important;
+    }
+    .tilt-content {
+        transform: none !important;
+    }
+}
+button, a, input, select, textarea {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+#hero-car-name {
+    font-family: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8), 0 0 35px rgba(0, 0, 0, 0.5);
+    transition: letter-spacing 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+                text-shadow 0.35s ease, 
+                color 0.35s ease,
+                transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    display: inline-block;
+    position: relative;
+    user-select: none;
+    text-wrap: balance;
+    word-break: normal;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+#hero-car-name:hover,
+.group:hover #hero-car-name {
+    letter-spacing: 0.045em;
+    color: #ffffff;
+    text-shadow: 0 0 25px rgba(245, 158, 11, 0.55), 
+                 0 0 50px rgba(245, 158, 11, 0.25), 
+                 0 4px 25px rgba(0, 0, 0, 0.95);
+    transform: translateY(-2px);
+}
+.hero-interactive-price {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 900;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, text-shadow 0.3s ease, filter 0.3s ease;
+}
+.hero-interactive-price:hover {
+    transform: translateY(-2px) scale(1.03);
+    text-shadow: 0 0 25px rgba(245, 158, 11, 0.7), 0 2px 10px rgba(0, 0, 0, 0.8);
+    filter: brightness(1.15);
+}
+.hero-stat-box {
+    border: 1px solid transparent;
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                background-color 0.25s ease, 
+                border-color 0.25s ease, 
+                box-shadow 0.25s ease;
+}
+.hero-stat-box:hover {
+    transform: translateY(-3px) scale(1.02);
+    border-color: rgba(245, 158, 11, 0.35);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.6), 0 0 15px rgba(245, 158, 11, 0.25);
+}
+.hero-stat-num {
+    font-family: 'Space Grotesk', 'Outfit', monospace, sans-serif;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+.hero-stat-box:hover .hero-stat-num {
+    color: #fbbf24;
+    text-shadow: 0 0 18px rgba(245, 158, 11, 0.6);
+}
+.font-brand {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    min-height: 3.4rem;
+    display: flex;
+    align-items: center;
+    word-break: normal;
+    overflow-wrap: break-word;
+    transition: letter-spacing 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+.vehicle-card:hover .font-brand {
+    letter-spacing: 0.025em;
+    color: #f59e0b;
+    text-shadow: 0 0 16px rgba(245, 158, 11, 0.35);
 }
 .gradient-gold {
     background: linear-gradient(135deg, #d4a30e, #a7800a);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+.gradient-gold:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(212, 163, 14, 0.4);
+}
+.gradient-gold:active {
+    transform: translateY(0) scale(0.98);
 }
 .search-bar-shadow {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.search-bar-shadow:hover,
+.search-bar-shadow:focus-within {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 20px rgba(245, 158, 11, 0.2);
+}
+.category-tilt-card {
+    transition: transform 0.2s cubic-bezier(0.2, 0, 0.2, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+    border: 1px solid rgba(75, 85, 99, 0.4);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    will-change: transform;
+}
+.category-tilt-card:hover {
+    border-color: rgba(245, 158, 11, 0.8);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.9), 0 0 35px rgba(245, 158, 11, 0.3);
+}
+.tilt-content {
+    transform: translateZ(35px);
+    transform-style: preserve-3d;
+}
+.tilt-shine {
+    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(245, 158, 11, 0.18) 0%, transparent 65%);
 }
