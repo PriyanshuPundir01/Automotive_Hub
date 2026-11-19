@@ -20,7 +20,7 @@
 <br/><br/>
 
 <p align="center">
-  <img src="ss/Homepage.png" alt="Automotive Hub Platform Preview" width="100%" />
+  <img src="ss/homepage-preview.png" alt="Automotive Hub Platform Preview" width="100%" />
 </p>
 
 <br/>
@@ -79,7 +79,7 @@ By pairing rich telemetry visualization with intuitive search ergonomics and sta
 
 ### 🌟 Interactive Discovery & Dynamic Showcase
 <p align="center">
-  <img src="ss/Homepage.png" alt="Automotive Hub Homepage" width="96%" />
+  <img src="ss/homepage-preview.png" alt="Automotive Hub Homepage" width="96%" />
 </p>
 <sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.0:</b> Hero portal featuring live multi-attribute search and responsive interface layout.</sub>
 
@@ -87,7 +87,7 @@ By pairing rich telemetry visualization with intuitive search ergonomics and sta
 
 ### 🏎️ Single Vehicle Telemetry & Detailed Specs
 <p align="center">
-  <img src="ss/catalogue.png" alt="Single Vehicle Telemetry & Specifications" width="96%" />
+  <img src="ss/car-specs-showcase.png" alt="Single Vehicle Telemetry & Specifications" width="96%" />
 </p>
 <sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 2.0:</b> Dedicated vehicle showcase featuring dynamic 0-100 km/h acceleration, top speed, driving range, and direct booking integration.</sub>
 
@@ -95,7 +95,7 @@ By pairing rich telemetry visualization with intuitive search ergonomics and sta
 
 ### 🚗 Vehicle Fleet Catalogue & Category Indexing
 <p align="center">
-  <img src="ss/verticals.png" alt="Fleet Catalogue Grid View" width="96%" />
+  <img src="ss/fleet-catalogue-grid.png" alt="Fleet Catalogue Grid View" width="96%" />
 </p>
 <sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 3.0:</b> Real-time category-filtered fleet grid displaying verified vehicle models, pricing, mileage, and fuel specifications.</sub>
 
@@ -103,7 +103,7 @@ By pairing rich telemetry visualization with intuitive search ergonomics and sta
 
 ### 📝 Client Reservation & Order Dispatch Console
 <p align="center">
-  <img src="ss/order.png" alt="Vehicle Booking Form" width="96%" />
+  <img src="ss/booking-reservation.png" alt="Vehicle Booking Form" width="96%" />
 </p>
 <sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 4.0:</b> Integrated booking console with auto-populated vehicle selector and instant manifest generation.</sub>
 
@@ -235,10 +235,10 @@ Additional Details: Requesting test drive availability for the AX7 Luxury Diesel
 ```text
 automotive hub/
 ├── ss/                      # Single screenshots repository directory
-│   ├── Homepage.png         # Screenshot: Hero search & landing portal
-│   ├── catalogue.png        # Screenshot: Single vehicle telemetry & specifications
-│   ├── verticals.png        # Screenshot: Vehicle fleet catalogue grid
-│   └── order.png            # Screenshot: Direct reservation modal
+│   ├── homepage-preview.png     # Screenshot: Hero search & landing portal
+│   ├── car-specs-showcase.png   # Screenshot: Single vehicle telemetry & specifications
+│   ├── fleet-catalogue-grid.png # Screenshot: Vehicle fleet catalogue grid
+│   └── booking-reservation.png  # Screenshot: Direct reservation modal
 ├── index.html               # Core semantic HTML5 application structure
 ├── style.css                # Custom CSS keyframes, scrollbar & animations
 ├── script.js                # Dataset, search filter engine & manifest export
