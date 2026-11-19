@@ -81,23 +81,23 @@ By pairing rich telemetry visualization with intuitive search ergonomics and sta
 
 <br/><br/>
 
-### 🏎️ Vehicle Fleet Catalogue & Category Indexing
+### 🏎️ Single Vehicle Telemetry & Detailed Specs
 <kbd>
-  <img src="ss/catalogue.png" alt="Fleet Catalogue View" width="94%" style="border-radius: 8px; border: 2px solid #f59e0b; box-shadow: 0 0 30px rgba(245, 158, 11, 0.25);" />
+  <img src="ss/catalogue.png" alt="Single Vehicle Telemetry & Specifications" width="94%" style="border-radius: 8px; border: 2px solid #f59e0b; box-shadow: 0 0 30px rgba(245, 158, 11, 0.25);" />
 </kbd>
 
 <br/>
-<sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 2.0:</b> Real-time category-filtered grid displaying pricing, mileage, and transmission details.</sub>
+<sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 2.0:</b> Dedicated vehicle showcase featuring dynamic 0-100 km/h acceleration, top speed, driving range, and direct booking integration.</sub>
 
 <br/><br/>
 
-### 🚛 Multi-Segment Verticals & Commercial Logistics
+### 🚗 Vehicle Fleet Catalogue & Category Indexing
 <kbd>
-  <img src="ss/verticals.png" alt="Automotive Categories and Verticals" width="94%" style="border-radius: 8px; border: 2px solid #f59e0b; box-shadow: 0 0 30px rgba(245, 158, 11, 0.25);" />
+  <img src="ss/verticals.png" alt="Fleet Catalogue Grid View" width="94%" style="border-radius: 8px; border: 2px solid #f59e0b; box-shadow: 0 0 30px rgba(245, 158, 11, 0.25);" />
 </kbd>
 
 <br/>
-<sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 3.0:</b> Multi-segment vehicle breakdown spanning Sedans, SUVs, and heavy-duty Commercial Trucks.</sub>
+<sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 3.0:</b> Real-time category-filtered fleet grid displaying verified vehicle models, pricing, mileage, and fuel specifications.</sub>
 
 <br/><br/>
 
@@ -237,9 +237,9 @@ Additional Details: Requesting test drive availability for the AX7 Luxury Diesel
 ```text
 automotive hub/
 ├── ss/                      # Single screenshots repository directory
-│   ├── Homepage.png         # Screenshot: Hero search & telemetry display
-│   ├── catalogue.png        # Screenshot: Vehicle grid catalogue
-│   ├── verticals.png        # Screenshot: Category & vertical breakdown
+│   ├── Homepage.png         # Screenshot: Hero search & landing portal
+│   ├── catalogue.png        # Screenshot: Single vehicle telemetry & specifications
+│   ├── verticals.png        # Screenshot: Vehicle fleet catalogue grid
 │   └── order.png            # Screenshot: Direct reservation modal
 ├── index.html               # Core semantic HTML5 application structure
 ├── style.css                # Custom CSS keyframes, scrollbar & animations
