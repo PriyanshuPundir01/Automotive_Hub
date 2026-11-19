@@ -17,6 +17,12 @@
 [![Status](https://img.shields.io/badge/Portal-Active_Production-00ff66?style=for-the-badge&logo=statuspage&logoColor=0a0c10)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-a78bfa?style=for-the-badge&logo=open-source-initiative&logoColor=0a0c10)](LICENSE)
 
+<br/><br/>
+
+<p align="center">
+  <img src="ss/Homepage.png" alt="Automotive Hub Platform Preview" width="100%" />
+</p>
+
 <br/>
 
 <p align="center" style="font-family: 'Bookman Old Style', 'URW Bookman', serif; font-size: 1.05rem;">
@@ -72,41 +78,33 @@ By pairing rich telemetry visualization with intuitive search ergonomics and sta
 <div align="center">
 
 ### 🌟 Interactive Discovery & Dynamic Showcase
-<kbd>
-  <img src="ss/Homepage.png" alt="Automotive Hub Homepage" width="94%" style="border-radius: 8px; border: 2px solid #f59e0b; box-shadow: 0 0 30px rgba(245, 158, 11, 0.25);" />
-</kbd>
-
-<br/>
-<sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.0:</b> Hero portal featuring live search discovery and high-resolution spec telemetry.</sub>
+<p align="center">
+  <img src="ss/Homepage.png" alt="Automotive Hub Homepage" width="96%" />
+</p>
+<sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.0:</b> Hero portal featuring live multi-attribute search and responsive interface layout.</sub>
 
 <br/><br/>
 
 ### 🏎️ Single Vehicle Telemetry & Detailed Specs
-<kbd>
-  <img src="ss/catalogue.png" alt="Single Vehicle Telemetry & Specifications" width="94%" style="border-radius: 8px; border: 2px solid #f59e0b; box-shadow: 0 0 30px rgba(245, 158, 11, 0.25);" />
-</kbd>
-
-<br/>
+<p align="center">
+  <img src="ss/catalogue.png" alt="Single Vehicle Telemetry & Specifications" width="96%" />
+</p>
 <sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 2.0:</b> Dedicated vehicle showcase featuring dynamic 0-100 km/h acceleration, top speed, driving range, and direct booking integration.</sub>
 
 <br/><br/>
 
 ### 🚗 Vehicle Fleet Catalogue & Category Indexing
-<kbd>
-  <img src="ss/verticals.png" alt="Fleet Catalogue Grid View" width="94%" style="border-radius: 8px; border: 2px solid #f59e0b; box-shadow: 0 0 30px rgba(245, 158, 11, 0.25);" />
-</kbd>
-
-<br/>
+<p align="center">
+  <img src="ss/verticals.png" alt="Fleet Catalogue Grid View" width="96%" />
+</p>
 <sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 3.0:</b> Real-time category-filtered fleet grid displaying verified vehicle models, pricing, mileage, and fuel specifications.</sub>
 
 <br/><br/>
 
 ### 📝 Client Reservation & Order Dispatch Console
-<kbd>
-  <img src="ss/order.png" alt="Vehicle Booking Form" width="94%" style="border-radius: 8px; border: 2px solid #f59e0b; box-shadow: 0 0 30px rgba(245, 158, 11, 0.25);" />
-</kbd>
-
-<br/>
+<p align="center">
+  <img src="ss/order.png" alt="Vehicle Booking Form" width="96%" />
+</p>
 <sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 4.0:</b> Integrated booking console with auto-populated vehicle selector and instant manifest generation.</sub>
 
 </div>
@@ -194,8 +192,8 @@ flowchart TD
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/automotive-hub.git
-cd "automotive hub"
+git clone https://github.com/PriyanshuPundir01/Automotive_Hub.git
+cd Automotive_Hub
 
 # 2. Option A: Direct browser launch
 # Double-click index.html or open it directly in your browser
