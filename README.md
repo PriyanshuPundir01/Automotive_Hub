@@ -41,25 +41,16 @@
 
 <h2 id="01-platform-overview" style="font-family: 'Bookman Old Style', 'URW Bookman', 'Georgia', serif; color: #f59e0b;">🌌 01. Platform Overview</h2>
 
-<p style="font-family: 'Bookman Old Style', 'URW Bookman', serif; font-size: 1.03rem; line-height: 1.75;">
-<b>Automotive Hub</b> is an advanced, high-performance web platform engineered to transform the digital vehicle exploration, specification analysis, and dealership reservation experience. Developed with a responsive, modern architecture utilizing semantic HTML5, modular Vanilla JavaScript (ES6+), and Tailwind CSS, the application delivers a seamless, zero-latency interface tailored for car buyers, commercial fleet operators, and automobile enthusiasts alike.
+<p style="font-family: 'Bookman Old Style', 'URW Bookman', serif; font-size: 1.05rem; line-height: 1.7;">
+<b>Automotive Hub</b> is a responsive single-page web portal designed for instant vehicle discovery, performance telemetry inspection, and dealership booking — built with semantic HTML5, Vanilla JavaScript (ES6+), and Tailwind CSS with zero backend dependencies.
 </p>
 
-<p style="font-family: 'Bookman Old Style', 'URW Bookman', serif; font-size: 1.03rem; line-height: 1.75;">
-At its aesthetic core, Automotive Hub features a dark obsidian and amber gold theme, enriched with subtle glassmorphism touches, card hover elevations, and fluid transitions. The platform addresses multifaceted automotive marketplace demands by presenting an extensive, categorized vehicle fleet comprising executive sedans (such as the Honda City, Volkswagen Virtus, and Skoda Slavia), high-utility SUVs (including the Mahindra XUV700, Hyundai Creta, and Toyota Fortuner), and heavy-duty commercial logistics haulers (ranging from Tata Signa trucks to Isuzu utility pickups).
-</p>
+### ⚡ Key Capabilities
 
-<p style="font-family: 'Bookman Old Style', 'URW Bookman', serif; font-size: 1.03rem; line-height: 1.75;">
-The platform features an intelligent, real-time discovery engine capable of instant multi-attribute filtering. Users can dynamically query the entire database by automotive brand, vehicle model name, or geographical city location with instant UI grid updates. Selecting any vehicle smoothly transitions the interface into an immersive performance telemetry showcase. This hero view visualizes critical vehicle engineering metrics, including 0–100 km/h acceleration timestamps, maximum top-speed ceilings, total driving range indices, and live market valuation figures in Indian Lakhs.
-</p>
-
-<p style="font-family: 'Bookman Old Style', 'URW Bookman', serif; font-size: 1.03rem; line-height: 1.75;">
-Complementing its exploration suite is a streamlined, client-side reservation pipeline. Integrated directly into the single-page application workflow, the booking console allows prospective buyers to schedule vehicle purchases or test drives with zero backend dependencies. Upon submitting contact details and vehicle preferences, the system triggers an in-browser Blob manifest compiler that dynamically serializes transaction details, generates a structured <code>order_details.txt</code> receipt file, and initiates an immediate local download for the client.
-</p>
-
-<p style="font-family: 'Bookman Old Style', 'URW Bookman', serif; font-size: 1.03rem; line-height: 1.75;">
-By pairing rich telemetry visualization with intuitive search ergonomics and standalone order dispatch mechanics, Automotive Hub establishes a modern benchmark for lightweight automotive portals, offering complete responsive cross-device compatibility across desktop workstations, tablets, and mobile devices without requiring complex database infrastructure or recurring server hosting overheads. It represents a refined digital fusion of speed, elegance, and intuitive automotive consumer utility for everyone.
-</p>
+- **🔍 Multi-Attribute Discovery:** Instantly search 65+ verified vehicles across Sedans, SUVs, and Trucks by make, model, category, or city.
+- **🏎️ Dynamic Telemetry HUD:** Interactive vehicle showcase featuring 0–100 km/h acceleration, top speed, driving range, and market pricing.
+- **📝 Instant Client Booking:** In-browser reservation workflow with input validation and automated manifest generation (<code>order_details.txt</code> download).
+- **📱 Fully Responsive & Secure:** Mobile-optimized layout with Content Security Policy (CSP), input sanitization, and anti-spam submission cooldown.
 
 ```
   ┌─────────────────────────┐      ┌─────────────────────────┐      ┌─────────────────────────┐
@@ -69,7 +60,7 @@ By pairing rich telemetry visualization with intuitive search ergonomics and sta
 ```
 
 > [!NOTE]
-> **Client-Side Manifest Generation**: Automotive Hub operates seamlessly without external backend dependencies, dynamically building and initiating direct download of customized transaction receipts and booking orders.
+> **Zero-Dependency Architecture**: Automotive Hub operates entirely client-side without requiring databases, server environments, or third-party APIs.
 
 ---
 
