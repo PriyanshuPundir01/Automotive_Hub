@@ -20,7 +20,7 @@
 <br/><br/>
 
 <p align="center">
-  <img src="ss/homepage-preview.png" alt="Automotive Hub Platform Preview" width="100%" />
+  <img src="ss/homepage-full-preview.png" alt="Automotive Hub Platform Preview" width="100%" />
 </p>
 
 <br/>
@@ -57,7 +57,7 @@
 
 ### 🌟 Interactive Discovery & Dynamic Showcase
 <p align="center">
-  <img src="ss/homepage-preview.png" alt="Automotive Hub Homepage" width="96%" />
+  <img src="ss/homepage-full-preview.png" alt="Automotive Hub Homepage" width="96%" />
 </p>
 <sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.0:</b> Hero portal featuring live multi-attribute search and responsive interface layout.</sub>
 
@@ -213,7 +213,7 @@ Additional Details: Requesting test drive availability for the AX7 Luxury Diesel
 ```text
 automotive hub/
 ├── ss/                      # Single screenshots repository directory
-│   ├── homepage-preview.png     # Screenshot: Hero search & landing portal
+│   ├── homepage-full-preview.png# Screenshot: Hero search & landing portal
 │   ├── car-specs-showcase.png   # Screenshot: Single vehicle telemetry & specifications
 │   ├── fleet-catalogue-grid.png # Screenshot: Vehicle fleet catalogue grid
 │   └── booking-reservation.png  # Screenshot: Direct reservation modal
