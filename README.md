@@ -20,7 +20,9 @@
 <br/><br/>
 
 <p align="center">
-  <img src="ss/homepage-full-preview.png" alt="Automotive Hub Platform Preview" width="100%" />
+  <a href="https://raw.githubusercontent.com/PriyanshuPundir01/Automotive_Hub/main/ss/homepage-full-preview.png" target="_blank">
+    <img src="https://raw.githubusercontent.com/PriyanshuPundir01/Automotive_Hub/main/ss/homepage-full-preview.png" alt="Automotive Hub Platform Preview" width="100%" />
+  </a>
 </p>
 
 <br/>
@@ -57,7 +59,9 @@
 
 ### 🌟 Interactive Discovery & Dynamic Showcase
 <p align="center">
-  <img src="ss/homepage-full-preview.png" alt="Automotive Hub Homepage" width="96%" />
+  <a href="https://raw.githubusercontent.com/PriyanshuPundir01/Automotive_Hub/main/ss/homepage-full-preview.png" target="_blank">
+    <img src="https://raw.githubusercontent.com/PriyanshuPundir01/Automotive_Hub/main/ss/homepage-full-preview.png" alt="Automotive Hub Homepage" width="96%" />
+  </a>
 </p>
 <sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.0:</b> Hero portal featuring live multi-attribute search and responsive interface layout.</sub>
 
@@ -65,7 +69,9 @@
 
 ### 🏎️ Single Vehicle Telemetry & Detailed Specs
 <p align="center">
-  <img src="ss/car-specs-showcase.png" alt="Single Vehicle Telemetry & Specifications" width="96%" />
+  <a href="https://raw.githubusercontent.com/PriyanshuPundir01/Automotive_Hub/main/ss/car-specs-showcase.png" target="_blank">
+    <img src="https://raw.githubusercontent.com/PriyanshuPundir01/Automotive_Hub/main/ss/car-specs-showcase.png" alt="Single Vehicle Telemetry & Specifications" width="96%" />
+  </a>
 </p>
 <sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 2.0:</b> Dedicated vehicle showcase featuring dynamic 0-100 km/h acceleration, top speed, driving range, and direct booking integration.</sub>
 
@@ -73,7 +79,9 @@
 
 ### 🚗 Vehicle Fleet Catalogue & Category Indexing
 <p align="center">
-  <img src="ss/fleet-catalogue-grid.png" alt="Fleet Catalogue Grid View" width="96%" />
+  <a href="https://raw.githubusercontent.com/PriyanshuPundir01/Automotive_Hub/main/ss/fleet-catalogue-grid.png" target="_blank">
+    <img src="https://raw.githubusercontent.com/PriyanshuPundir01/Automotive_Hub/main/ss/fleet-catalogue-grid.png" alt="Fleet Catalogue Grid View" width="96%" />
+  </a>
 </p>
 <sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 3.0:</b> Real-time category-filtered fleet grid displaying verified vehicle models, pricing, mileage, and fuel specifications.</sub>
 
@@ -81,7 +89,9 @@
 
 ### 📝 Client Reservation & Order Dispatch Console
 <p align="center">
-  <img src="ss/booking-reservation.png" alt="Vehicle Booking Form" width="96%" />
+  <a href="https://raw.githubusercontent.com/PriyanshuPundir01/Automotive_Hub/main/ss/booking-reservation.png" target="_blank">
+    <img src="https://raw.githubusercontent.com/PriyanshuPundir01/Automotive_Hub/main/ss/booking-reservation.png" alt="Vehicle Booking Form" width="96%" />
+  </a>
 </p>
 <sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 4.0:</b> Integrated booking console with auto-populated vehicle selector and instant manifest generation.</sub>
 
